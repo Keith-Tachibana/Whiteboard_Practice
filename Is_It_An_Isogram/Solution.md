@@ -1,3 +1,4 @@
+```JavaScript
 function isIsogram(str) {
 	let strLower = str.toLowerCase();
 	for (let i = 0; i < strLower.length; i++) {
@@ -9,3 +10,4 @@ function isIsogram(str) {
 	}
 	return true;
 }
+```
