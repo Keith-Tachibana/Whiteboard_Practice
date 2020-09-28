@@ -1,3 +1,4 @@
+```JavaScript
 function makePyramid(numRows) {
 	var asteriskCount = numRows * 2 - 1;
 	var spaceCount = 0;
@@ -10,3 +11,4 @@ function makePyramid(numRows) {
 	}
 	return pyramidArray;
 }
+```

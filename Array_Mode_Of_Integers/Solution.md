@@ -1,3 +1,4 @@
+```JavaScript
 function checkForMostInt(arr) {
 	if (arr.length === 0) {
 		return null;
@@ -19,3 +20,4 @@ function checkForMostInt(arr) {
 	}
 	return maxNumber;
 }
+```
