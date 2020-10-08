@@ -27,21 +27,3 @@ function maxOccurringChar(str) {
   return maxChar;
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
