@@ -1,29 +1,29 @@
 ```JavaScript
-function maxOccurringChar(str) {
-  if (str.length === 0) {
-   return null; 
-  }
-  if (str.length === 1) {
-   return str; 
-  }
-  const lowercaseStr = str.toLowerCase();
-  const emptyHashTable = {};
-  let maxChar = lowercaseStr[0];
-  let maxCount = 0;
-  for (let i = 0; i < lowercaseStr.length; i++) {
-    let currentChar = lowercaseStr[i];
-    if (!emptyHashTable[currentChar]) {
-      emptyHashTable[currentChar] = 0;
-    }
-    emptyHashTable[currentChar]++;
-    if (emptyHashTable[currentChar] > maxCount) {
-      maxChar = currentChar;
-      maxCount = emptyHashTable[currentChar];
-    } else if (emptyHashTable[currentChar] === maxCount) {
-    	maxChar += ' and ' + currentChar;
-    	maxCount = emptyHashTable[currentChar]; 
-    }
-  }
-  return maxChar;
+function maxRepeatedChar(str) {
+	if (str.length === 0) {
+		return null;
+	}
+	if (str.length === 1) {
+		return str;
+	}
+	let maxCount = 0, emptyObj = {}, emptyArr = [];
+	for (let i = 0; i < str.length; i++) {
+		let currentChar = str[i];
+		if (!emptyObj[currentChar]) {
+			emptyObj[currentChar] = 1;
+		} else {
+			emptyObj[currentChar]++;
+		}
+	}
+	for (let keys in emptyObj) {
+		if (emptyObj[keys] > maxCount) {
+			emptyArr = [];
+			emptyArr.push(keys);
+			maxCount = emptyObj[keys];
+		} else if (emptyObj[keys] === maxCount) {
+			emptyArr.push(keys);
+		}
+	}
+	return emptyArr;
 }
 ```
