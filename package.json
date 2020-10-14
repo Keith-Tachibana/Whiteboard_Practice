@@ -1,0 +1,24 @@
+{
+  "name": "Whiteboard_Practice",
+  "version": "1.0.0",
+  "description": "Whiteboard practice problems",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^26.5.3"
+  },
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keith-Tachibana/Whiteboard_Practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Keith-Tachibana/Whiteboard_Practice/issues"
+  },
+  "homepage": "https://github.com/Keith-Tachibana/Whiteboard_Practice#readme"
+}
