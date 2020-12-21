@@ -1,4 +1,4 @@
-const myFunctions = require('./Solution');
+const myFunctions = require('./mostRepeatedCharInString-Solution');
 
 test('Input aaabbbcddd should return ["a", "b", "d"]', () => {
    expect(myFunctions.maxRepeatedChar('aaabbbcddd')).toStrictEqual(['a', 'b', 'd']);
